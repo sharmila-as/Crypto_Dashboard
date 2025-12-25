@@ -1,0 +1,42 @@
+<section class="chart-section">
+
+  <div class="controls">
+    <div>
+      <label>Select Cryptocurrency</label>
+      <select [(ngModel)]="coinId" (change)="loadData()">
+        <option *ngFor="let c of coins" [value]="c.id">
+          {{ c.label }}
+        </option>
+      </select>
+    </div>
+
+    <div class="timeframes">
+      <button
+        *ngFor="let t of timeframes"
+        [class.active]="days === t.value"
+        (click)="days = t.value; loadData()">
+        {{ t.label }}
+      </button>
+    </div>
+  </div>
+
+  <section class="chart-card">
+    <h3>Price Chart</h3>
+    <p>Historical price data with trading volume</p>
+
+    <div class="chart-container">
+        <canvas
+        baseChart
+        [data]="chartData"
+        [options]="chartOptions"
+        [type]="'bar'">
+        </canvas>
+    </div>
+
+    <div class="loader" *ngIf="loading">
+        Loading chart...
+    </div>
+</section>
+
+
+

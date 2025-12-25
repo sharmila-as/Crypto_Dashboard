@@ -1,0 +1,99 @@
+.top-movers {
+  margin-top: 3rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem;
+}
+
+/* Card base */
+.card {
+  border-radius: 16px;
+  border: 2px solid #b68bc4;
+  background: white;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+/* Header strip */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+}
+
+.gainer-header {
+  background: #ecfdf5;
+  color: #059669;
+}
+
+.loser-header {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+/* Icon bubble */
+.icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.icon.up {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.icon.down {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* Body */
+.card-body {
+  padding: 1.75rem;
+}
+
+.card-body h3 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.card-body small {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.price {
+  margin-top: 1rem;
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+
+.change {
+  margin-top: 0.5rem;
+  font-weight: 700;
+}
+
+.positive {
+  color: #059669;
+}
+
+.negative {
+  color: #dc2626;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}

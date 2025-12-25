@@ -1,0 +1,48 @@
+.chart-section {
+  padding: 2rem;
+  background: white;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+select {
+  padding: 0.6rem;
+  border-radius: 10px;
+  border: 2px solid #6b3fa0;
+}
+
+.timeframes button {
+  margin-left: 0.5rem;
+  padding: 0.6rem 1rem;
+  border-radius: 12px;
+  border: 2px solid #6b3fa0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.timeframes button.active {
+  background: #6b3fa0;
+  color: white;
+}
+
+.chart-card {
+  background: white;
+  border-radius: 18px;
+  padding: 1.5rem;
+  border: 2px solid #7c3aed; 
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+.chart-container {
+  position: relative;
+  height: 420px;       /* ✅ FIXED HEIGHT */
+  width: 100%;
+}
+
+canvas {
+  display: block;
+}

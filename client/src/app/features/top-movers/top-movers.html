@@ -1,0 +1,98 @@
+<section class="top-movers" *ngIf="data as top">
+  <h2>Top Gainers &amp; Losers (24h)</h2>
+
+  <div class="cards">
+    <!-- Top Gainer -->
+    <article class="card gainer">
+      <header class="card-header gainer-header">
+        <div class="icon up">↗</div>
+        <span>Top Gainer</span>
+      </header>
+
+      <div class="card-body">
+        <h3>{{ top.gainer.name }}</h3>
+        <small>{{ top.gainer.symbol | uppercase }}</small>
+
+        <div class="price">
+          ${{ top.gainer.current_price | number:'1.2-2' }}
+        </div>
+
+        <div class="change positive">
+          ↗ {{ top.gainer.price_change_percentage_24h | number:'1.1-1' }}%
+        </div>
+      </div>
+    </article>
+
+    <!-- Top Loser -->
+    <article class="card loser">
+      <header class="card-header loser-header">
+        <div class="icon down">↘</div>
+        <span>Top Loser</span>
+      </header>
+
+      <div class="card-body">
+        <h3>{{ top.loser.name }}</h3>
+        <small>{{ top.loser.symbol | uppercase }}</small>
+
+        <div class="price">
+          ${{ top.loser.current_price | number:'1.2-2' }}
+        </div>
+
+        <div class="change negative">
+          ↘ {{ top.loser.price_change_percentage_24h | number:'1.1-1' }}%
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+
+<!--  <section class="top-movers">
+  <h2>Top Gainers & Losers (24h)</h2>
+
+  <div class="cards" *ngIf="data">
+    //Top Gainer 
+    <div class="card gainer">
+      <div class="card-header gainer-header">
+        <div class="icon up">↗</div>
+        <span>Top Gainer</span>
+      </div>
+
+      <div class="card-body">
+        <h3>{{ data.gainer.name }}</h3>
+        <small>{{ data.gainer.symbol.toUpperCase() }}</small>
+
+        <div class="price">
+          ${{ data.gainer.current_price | number:'1.2-2' }}
+        </div>
+
+        <div class="change positive">
+          ↗ {{ data.gainer.price_change_percentage_24h | number:'1.1-1' }}%
+        </div>
+      </div>
+    </div>
+
+    // Top Loser
+    <div class="card loser">
+      <div class="card-header loser-header">
+        <div class="icon down">↘</div>
+        <span>Top Loser</span>
+      </div>
+
+      <div class="card-body">
+        <h3>{{ data.loser.name }}</h3>
+        <small>{{ data.loser.symbol.toUpperCase() }}</small>
+
+        <div class="price">
+          ${{ data.loser.current_price | number:'1.2-2' }}
+        </div>
+
+        <div class="change negative">
+          ↘ {{ data.loser.price_change_percentage_24h | number:'1.1-1' }}%
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ -->
