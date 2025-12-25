@@ -85,7 +85,7 @@ Ensure API keys or config variables are set in a .env file.
 
 
 
-![Dashboard](https://drive.google.com/file/d/1r5uAO_Z62hv-rN86HgK1zxnjVqcs-3Zt/view?usp=sharing)
+![Dashboard](screenshot/Dashboard.png)
 
 ![Panels](https://drive.google.com/file/d/1Ecy2PSWOxY-HjzH_RG3qY-gCWs7MkKuD/view?usp=sharing)
 
