@@ -15,17 +15,12 @@ export const coingeckoService = {
     const response = await axios.get(`${BASE_URL}/coins/markets`, {
       params: {
         vs_currency: 'usd',
-        ids: 'bitcoin,ethereum,dogecoin',   // 🔹 restrict to your 3 coins
+        ids: 'bitcoin,ethereum,dogecoin',   
         order: 'market_cap_desc',
         per_page: 3,
         page: 1,
         sparkline: false,
         price_change_percentage: '24h'
-        /* vs_currency: 'usd',
-        order: 'price_change_percentage_24h_desc',
-        per_page: 10,
-        page: 1,
-        sparkline: false */
       },
       timeout: 10000
     });

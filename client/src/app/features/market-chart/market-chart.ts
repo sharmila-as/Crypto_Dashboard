@@ -19,9 +19,8 @@ export class MarketChartComponent implements OnInit {
 
   @ViewChild(BaseChartDirective) chart?: BaseChartDirective;
 
-  // ----------------------------
-  // UI State
-  // ----------------------------
+  
+  
   coinId: string = 'bitcoin';
   days: number = 30;
   loading = false;
@@ -38,9 +37,9 @@ export class MarketChartComponent implements OnInit {
     { label: '30D', value: 30 }
   ];
 
-  // ----------------------------
+  
   // Chart Config
-  // ----------------------------
+  
   chartData: ChartConfiguration<'bar'>['data'] = {
     labels: [],
     datasets: []
@@ -85,17 +84,16 @@ export class MarketChartComponent implements OnInit {
     private cdr: ChangeDetectorRef
   ) {}
 
-  // ----------------------------
+  
   // Lifecycle
-  // ----------------------------
+  
   ngOnInit(): void {
-    // 🔑 Load chart immediately on page load
     this.loadData();
   }
 
-  // ----------------------------
+  
   // Data Loader
-  // ----------------------------
+  
   loadData(): void {
     this.loading = true;
 
@@ -134,7 +132,7 @@ export class MarketChartComponent implements OnInit {
             ]
           };
 
-          // 🔑 Force chart refresh
+          
           this.chart?.update();
           this.loading = false;
           this.cdr.detectChanges();
@@ -145,9 +143,9 @@ export class MarketChartComponent implements OnInit {
       });
   }
 
-  // ----------------------------
+  
   // UI Handlers
-  // ----------------------------
+  
   onCoinChange(): void {
     this.loadData();
   }

@@ -19,7 +19,7 @@ export class CryptoService {
     return this.http.get<TopMoversResponse>(`${this.API}/top-movers`);
   }
 
-  // Bonus: Add prices endpoint
+  
   getPrices(ids: string = 'bitcoin,ethereum,solana'): Observable<any> {
     return this.http.get(`${this.API}/prices?ids=${ids}`);
   }
