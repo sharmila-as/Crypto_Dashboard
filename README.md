@@ -31,6 +31,7 @@ Crypto_Dashboard/
 ├── server/           # Backend server (optional)
 ├── .gitignore
 ├── README.md
+```
 
 ## Installation
 
