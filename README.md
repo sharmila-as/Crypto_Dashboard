@@ -83,11 +83,9 @@ Ensure API keys or config variables are set in a .env file.
 
 ## Screenshots
 
+<img width="1897" height="864" alt="Dashboard" src="https://github.com/user-attachments/assets/a298ec1e-97f2-418d-bd1a-ef8836a2ad24" />
+<img width="1899" height="858" alt="panels" src="https://github.com/user-attachments/assets/ac404c66-6c59-4a8b-876b-972f5416c9db" />
 
-
-![Dashboard](screenshot/Dashboard.png)
-
-![Panels](https://drive.google.com/file/d/1Ecy2PSWOxY-HjzH_RG3qY-gCWs7MkKuD/view?usp=sharing)
 
 
 ## Demo
@@ -97,5 +95,5 @@ https://drive.google.com/file/d/1CGa3cLsbGxCTg_YM2MBuwrAbRqKpnMxm/view?usp=shari
 
 ## Authors
 
-- [Sharmila Devi A S](https://github.com/sharmila-as)
+- [Sharmila Devi A S](https://www.linkedin.com/in/sharmiladevias/)
 
